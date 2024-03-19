@@ -1,0 +1,32 @@
+.design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 8rem;
+    gap: 2rem;
+    background: $bg-design;
+    @include tablet {
+        padding: 1.25rem 1.25rem;
+    }
+    h4 {
+        @include h4;
+        color: $text-inverse;
+    }
+    a {
+        @include a;
+        color: $text-inverse;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

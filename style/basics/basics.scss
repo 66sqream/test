@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+
+@mixin h1{
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+@mixin h2 {
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+@mixin h3 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+    // letter-spacing: -0.16rem;
+}
+
+@mixin h4 {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Wix Madefor Display", sans-serif;
+    line-height: 100%; 
+}
+
+@mixin a {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Wix Madefor Display", sans-serif;
+    line-height: 100%; 
+}
+
+@mixin p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Wix Madefor Display", sans-serif;
+    line-height: 110%; 
+    // letter-spacing: -0.03rem;
+}
+
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+        @content
+    }
+}
+
+
+
+$bg-primary: #FFFFFF;
+$bg-inverse: #020202;
+$bg-accent: #881103;
+$bg-hero: linear-gradient(180.00deg, rgb(2, 2, 2),rgb(31, 31, 31) 100%);
+$bg-design: linear-gradient(0.54deg, rgb(136, 17, 3) 46.594%,rgba(136, 17, 3, 0) 77.601%),rgb(2, 2, 2);
+$bg-inverse-subdued: #F5F5F5;
+$text-primary: #020202;
+$text-inverse: #FFFFFF;
+$text-primary-subdued: #A4A4A4;
+$text-inverse-subdued: #5D5D5D;
+$text-accent: #881103;
+$icon-primary: #020202;
+$icon-inverse: #FFFFFF;
+$icon-primary-subdued: #A4A4A4;
+$icon-inverse-subdued: #5D5D5D;
+$icon-accent: #881103;
+$border-primary: #020202;
+$border-inverse: #FFFFFF;
+$border-primary-subdued-before: #EBEBEB;
+$border-primary-subdued-active: #D7D7D7;
+$border-accent: rgba(136, 17, 3, .4);
+$desktop: 1920px;
+$res1500: 1500px;
+$res1200: 1200px;
+$res1100: 1100px;
+$tablet: 800px;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    @include desktop {
+        font-size: .8333vw;
+    }
+    @include tablet {
+        font-size: 12px;
+    }
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: $text-primary;
+    overflow-x: hidden;
+   
+}
+
+h1, h2, h3, h4, a, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}

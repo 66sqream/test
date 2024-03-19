@@ -1,0 +1,240 @@
+.control-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8rem;
+    margin-top: 8rem;
+    max-width: 1920px;
+    .control-block-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1.25rem;
+        gap: 6rem;
+        @include tablet {
+            gap: 8rem;
+        }
+        h1 {
+            @include h1;
+            font-size: 5.5rem;
+            max-width: 78.125rem;
+            text-align: center; 
+            @include tablet {
+                font-size: 2.75rem;
+            }
+            span {
+                color: $text-accent;
+            }
+        }
+        .infa {
+            display: flex;
+            align-items: center;
+            .left-infa-control {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 17.438rem;
+                @include tablet {
+                    display: none;
+                }
+                .block-control {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
+                    right: -0.35rem;
+                    gap: 4rem;
+                    max-width: 12.9rem;
+                    animation: 6s show ease;
+                    &:nth-child(1 of .block-control ) {
+                        // display: none;
+                        top: -2.5rem;
+                        @include tablet {
+                            top: 0rem;
+                        }
+                    }
+                     &:nth-child(2 of .block-control ) {
+                        // display: none;
+                        top: -10.5rem;
+                        @include tablet {
+                            top: 0rem;
+                        }
+                    }
+                    .dot {
+                        content: '';
+                        border-radius: 50%;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        background-color: $bg-inverse;
+                    }
+                    hr {
+                        display: flex;
+                        flex: 1;
+                        border: none;
+                        width: 2px;
+                        height: 12rem;
+                        // height: 100%;
+                        margin-top: 0.6rem;
+                        background-image: linear-gradient(to bottom, $bg-inverse 0.625rem, transparent 0.625rem);
+                        background-size: 100% 1.25rem;
+                    }
+                    .infa-block-control {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        gap: 2rem;
+                        h4 {
+                            @include h4;
+                            color: $text-inverse-subdued;
+                        }
+                        h2 {
+                            @include h2;
+                            font-size: 2.25rem;
+                            text-align: end;
+                            max-width: 22.5rem;
+                        }
+                        p {
+                            font-size: 1rem;
+                            color: $text-inverse-subdued;
+                            text-align: end;
+                        }
+                    }
+
+                    @include tablet {
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+
+                .invalid {
+                    right: 2rem;
+                    max-width: 22.5rem;
+                }
+            }
+            .right-infa-control {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 17.438rem;
+                @include tablet {
+                    gap: 3.438rem;
+                }
+                .block-control {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    left: -0.406rem;
+                    max-width: 22.5rem;
+                    gap: 4rem;
+                    top: -3rem;
+                    animation: 5s show ease;
+                    @include tablet {
+                        width: 100%;
+                    }
+                    &:nth-child(3 of .block-control ) {
+                        // display: none;
+                        top: -9.5rem;
+                        @include tablet {
+                            top: 0rem;
+                        }
+                    }
+                    &:nth-child(5 of .block-control ) {
+                        // display: none;
+                        top: -13.2rem;
+                        @include tablet {
+                            top: 0rem;
+                        }
+                    }
+                    .rounded {
+                        min-width: 0.66rem;
+                        min-height: 0.66rem;
+                        background: $bg-inverse;
+                        border-radius: 100%;
+                        // width: 100%;
+                        // height: 100%;
+                        @include tablet {
+                            display: none;
+                        }
+                    }
+                    .infa-block-control {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        @include tablet {
+                           align-items: center;
+                           text-align: center;
+                           gap: 1.5rem;
+                        }
+                        h4 {
+                            @include h4;
+                            color: $text-inverse-subdued;
+                        }
+                        h2 {
+                            @include h2;
+                            font-size: 2.25rem;
+                        }
+                        p {
+                            font-size: 1rem;
+                            color: $text-inverse-subdued;
+                        }
+                    }
+                    .dot {
+                        content: '';
+                        border-radius: 50%;
+                        width: 0.625rem;
+                        height: 0.625rem;
+                        background-color: $bg-inverse;
+                    }
+                    hr {
+                        display: flex;
+                        flex: 1;
+                        border: none;
+                        width: 2px;
+                        height: 100%;
+                        height: 12rem;
+                        margin-top: 0.6rem;
+                        background-image: linear-gradient(to bottom, $bg-inverse 0.625rem, transparent 0.625rem);
+                        background-size: 100% 1.25rem;
+                    }
+                    @include tablet {
+                        .line-block {
+                            display: none;
+                        }
+                    }
+
+                }
+                // &:nth-child(2){
+                //     top: 2rem;
+                // }
+
+                .round {
+                    align-items: flex-start;
+                    left: -0.36rem;
+                }
+                .mobile {
+                    display: none;
+                    @include tablet {
+                        display: flex;
+                        gap: 20rem;
+                        &:nth-child(2) {
+                            margin-top: 2rem;
+                        }
+                        &:nth-child(3) {
+                            margin-top: 2rem;
+                        }
+                        &:nth-child(4) {
+                            margin-top: 4rem;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+ 

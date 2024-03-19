@@ -1,0 +1,214 @@
+.producte-block {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    width: 100%;
+    margin-top: 8rem;
+    max-width: 1920px;
+    @include tablet{
+        margin-top: 4rem;
+    }
+    .producte-block-con {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        width: 100%;
+        padding: 0rem 5rem;
+        @include tablet{
+            flex-direction: column;
+            gap: 4rem;
+            padding: 0rem 1.25rem;
+        }
+        .left {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            h1 {
+                letter-spacing: -6%;
+                line-height: 100%;
+                font-weight: 500;
+                font-size: 5.5rem;
+                @include tablet{
+                    font-size: 3.5rem;
+                }
+                span {
+                    color: $text-accent;
+                }
+            }
+            .res1000 {
+                width: 22.5rem;
+                font-size: 0.75rem;
+                @include tablet{
+                    display: none;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 3rem;
+            .row-right {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 3rem;
+                @include tablet{
+                    flex-direction: column;
+                    
+                }
+                .block-right{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    width: 22.5rem;
+                    @include tablet{
+                        width: 100%;
+                    }
+                    // @include res1500{
+                    //     width: 15rem;
+                    // }
+                    // height: 19.375rem;
+                    .icon-right-block {
+                        width: 4rem;
+                        height: 4rem;
+                        padding: 0rem 1.875rem;
+                        border-right: 0.125rem solid $border-primary-subdued-active;
+                        border-left: 0.125rem solid $border-primary-subdued-active;
+                        @include tablet{
+                            padding: 0rem 1rem;
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                    h3 {
+                        @include h3;
+                        font-size: 2.25rem;
+                        font-weight: 500;
+                        // @include res1500{
+                        //     font-size: 2rem;
+                        // }
+                        // @include res1200{
+                        //     font-size: 1.25rem;
+                        //     letter-spacing: 0rem;
+                        // }
+                    }
+                    p {
+                        font-weight: 400;
+                        line-height: 130%;
+                        letter-spacing: -0.03rem;
+                        // @include res1500{
+                        //     font-size: 0.875rem;
+                        // }
+                    }
+                }
+            }
+        }
+        .restablet {
+            display: none;
+            width: 22.5rem;
+            font-size: 0.75rem;
+            @include tablet {
+                display: flex;
+            }
+        }
+    }
+}
+// .producte-block-mobile {
+//     display: none;
+//     justify-content: center;
+//     width: 100%;
+//     margin-top: 4rem;
+//     @include tablet{
+//         display: flex;
+//         margin-top: 4rem;
+//     }
+//     .producte-block-mobile-con {
+//         display: flex;
+//         justify-content: center;
+//         width: 100%;
+//         padding: 0rem 1.25rem;
+//         gap: 2rem;
+//         @include tablet{
+//             flex-direction: column;
+//         }
+//         .left {
+//             display: flex;
+//             justify-content: space-between;
+//             flex-direction: column;
+//             height: 100%;
+//             h1 {
+//                 letter-spacing: -6%;
+//                 line-height: 100%;
+//                 font-weight: 500;
+//                 font-size: 5.5rem;
+//                 @include res1500{
+//                     font-size: 4rem;
+//                 }
+//                 span {
+//                     color: $text-accent;
+//                 }
+//             }
+//             p {
+//                 width: 22.5rem;
+//                 font-size: 0.75rem;
+//                 @include res1500{
+//                     font-size: 0.875rem;
+//                 }
+//             }
+//         }
+//         .right {
+//             display: flex;
+//             justify-content: flex-start;
+//             flex-direction: column;
+//             gap: 2rem;
+//             .row-right {
+//                 display: flex;
+//                 gap: 6rem;
+//                 .block-right{
+//                     display: flex;
+//                     flex-direction: column;
+//                     gap: 2rem;
+//                     width: 22.5rem;
+//                     @include res1500{
+//                         width: 15rem;
+//                     }
+//                     // height: 19.375rem;
+//                     .icon-right-block {
+//                         width: 4rem;
+//                         height: 4rem;
+//                         padding: 0rem 1.875rem;
+//                         border-right: 0.125rem solid $border-primary-subdued-active;
+//                         border-left: 0.125rem solid $border-primary-subdued-active;
+//                         @include res1500{
+//                             padding: 0rem 1rem;
+//                             width: 3rem;
+//                             height: 3rem;
+//                         }
+//                     }
+//                     h3 {
+//                         @include h3;
+//                         font-size: 2.25rem;
+//                         font-weight: 500;
+//                         @include res1500{
+//                             font-size: 2rem;
+//                         }
+//                         @include res1200{
+//                             font-size: 1.25rem;
+//                             letter-spacing: 0rem;
+//                         }
+//                     }
+//                     p {
+//                         font-weight: 400;
+//                         line-height: 130%;
+//                         letter-spacing: -0.03rem;
+//                         @include res1500{
+//                             font-size: 0.875rem;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

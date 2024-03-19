@@ -1,0 +1,95 @@
+.guarantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 16rem;
+    max-width: 1920px;
+    .guarntee-con {
+        display: flex;
+        justify-content: space-between;
+        // gap: 24.063rem;
+        width: 100%;
+        padding: 0rem 5rem;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            gap: 8.75rem;
+            padding: 0rem 1.25rem;
+        }
+        .img-video-car {
+            height: 55rem;
+            @include tablet {
+                max-width: 21rem;
+                height: 15rem;
+                transform:  rotate(-30deg);;
+            }
+        }
+        .right-guarantee {
+            display: flex;
+            flex-direction: column;
+            max-width:  55rem;
+            gap: 8rem;
+            @include tablet{
+                align-items: center;
+            }
+
+            h1 {
+                @include h1;
+                font-size: 5.5rem;
+                line-height: 100%;
+                letter-spacing: -0,06rem;
+                text-align: left;
+                @include tablet{
+                    font-size: 2.75rem;
+                    text-align: start;
+                    // max-width: 26.5rem;
+                }
+                span {
+                    color: $text-accent;
+                }
+            }
+            .blocks-guarantee {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6rem;
+                @include tablet{
+                    flex-direction: column;
+                }
+                .block-guarantee {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    // max-width: 22.5rem;
+                    @include tablet {
+                        // max-width: 26.5rem
+                    }
+                    h4 {
+                       @include h4;
+                    }
+                    h2 {
+                        @include h2;
+                        font-size: 2.25rem;
+                        line-height: 110%;
+                        letter-spacing: -0.03rem;
+                    }
+                    p {
+                        @include p;
+                        color: $text-inverse-subdued;
+                        line-height: 130%;
+                        letter-spacing: -0.03rem;
+                    }
+                }
+            }
+            .color-accent {
+                @include h2;
+                color: $text-accent;
+                font-size: 2.25rem;
+                @include tablet {
+                    font-size: 1.125rem;
+                    // max-width: 26.5rem
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    background: $bg-inverse;
+    min-width: 0;
+    @include tablet {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .gazel {
+        height: 55rem;
+        z-index: 1;
+        @include tablet {
+            height: 29rem;
+            padding-bottom: 2rem;
+        }
+    }
+    .right-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        color: $bg-primary;
+        min-width: 0;
+        .text-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            @include tablet {
+                padding: 2rem 0rem 0rem 1rem;
+            }
+            h1 {
+                @include h1;
+                font-size: 5.5rem;
+                color: $bg-primary;
+                @include tablet {
+                    font-size: 2.75rem;
+                }
+            }
+            .text-footer-p {
+                font-size: 2.25rem;
+                color: $text-inverse-subdued;
+                @include tablet {
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .swiper {
+            padding-bottom: 2rem;
+            z-index: 0;
+            width: 90%;
+            margin: 0 !important;
+            @include tablet {
+                margin-left: 1.25rem !important;
+            }
+            .swiper-wrapper {
+                margin: 0 !important;
+                max-width: 500px !important;
+                .swiper-slide {
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 2rem;
+                    border-left: 0.087rem solid $bg-primary;
+                    height: 10rem;
+                    gap: 2rem;
+                    h3 {
+                        @include h3;
+                        font-size: 2.25rem;
+                        @include tablet {
+                            font-size: 1.125rem;
+                        }
+                    }
+                    p {
+                        width: 26.5rem;
+                        @include tablet {
+                            width: 15rem;
+                            font-size: 0.875rem;
+                        }
+                    }
+                    
+                }
+            }
+            .swiper-scrollbar {
+                background: rgb(255, 255, 255, .1);
+                height: 0.75rem;
+                .swiper-scrollbar-drag {
+                    background: $bg-primary;
+                    opacity: .4;
+                }
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+}
